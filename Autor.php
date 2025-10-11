@@ -8,16 +8,24 @@ class Autor {
         $this->biografia = $biografia;
     }
 
-    public function getNombre(): string {
-        return $this->nombre;
-    }
-
-    public function getBiografia(): string {
-        return $this->biografia;
-    }
-
     public function __toString(): string {
         return $this->nombre;
+    }
+
+    /**
+     * Get the value of nombre
+     */ 
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Get the value of biografia
+     */ 
+    public function getBiografia()
+    {
+        return $this->biografia;
     }
 }
 ?>

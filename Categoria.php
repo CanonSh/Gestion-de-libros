@@ -8,16 +8,25 @@ class Categoria {
         $this->descripcion = $descripcion;
     }
 
-    public function getNombre(): string {
-        return $this->nombre;
-    }
-
-    public function getDescripcion(): string {
-        return $this->descripcion;
-    }
 
     public function __toString(): string {
         return $this->nombre;
+    }
+
+    /**
+     * Get the value of nombre
+     */ 
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Get the value of descripcion
+     */ 
+    public function getDescripcion()
+    {
+        return $this->descripcion;
     }
 }
 ?>

@@ -12,17 +12,6 @@ class Libro {
         $this->disponible = true;
     }
 
-    public function getTitulo(): string {
-        return $this->titulo;
-    }
-
-    public function getAutor(): Autor {
-        return $this->autor;
-    }
-
-    public function getCategoria(): Categoria {
-        return $this->categoria;
-    }
 
     public function estaDisponible(): bool {
         return $this->disponible;
@@ -42,6 +31,31 @@ class Libro {
     public function __toString(): string {
         $estado = $this->disponible ? "Disponible" : "Prestado";
         return "{$this->titulo} ({$this->autor->getNombre()} - {$this->categoria->getNombre()}) - {$estado}";
+    }
+
+    /**
+     * Get the value of categoria
+     */ 
+    public function getCategoria()
+    {
+        return $this->categoria;
+    }
+
+
+    /**
+     * Get the value of autor
+     */ 
+    public function getAutor()
+    {
+        return $this->autor;
+    }
+
+    /**
+     * Get the value of titulo
+     */ 
+    public function getTitulo()
+    {
+        return $this->titulo;
     }
 }
 ?>

@@ -6,11 +6,16 @@ class Usuario {
         $this->nombre = $nombre;
     }
 
-    public function getNombre(): string {
+
+    public function __toString(): string {
         return $this->nombre;
     }
 
-    public function __toString(): string {
+    /**
+     * Get the value of nombre
+     */ 
+    public function getNombre()
+    {
         return $this->nombre;
     }
 }
